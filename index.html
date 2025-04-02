@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jorge Soto – Marca Personal</title>
+  <style>
+    body {
+      background: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      color: #666;
+    }
+
+    p.description {
+      max-width: 500px;
+      margin: 20px auto 40px;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .profile-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 10px auto;
+      margin-top: 80px;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid #10d8eb;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .social-icon {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .social-icon img {
+      width: 60%;
+    }
+
+    .line {
+      position: absolute;
+      width: 3px;
+      background: #10d8eb;
+      border-radius: 2px;
+      z-index: 1;
+      opacity: 0.6;
+    }
+
+    /* Líneas a cada ícono con mejor diseño */
+    .line-instagram {
+      height: 130px;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(0deg);
+    }
+
+    .line-facebook {
+      height: 130px;
+      top: 50%;
+      left: calc(100% - 40px);
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .line-whatsapp {
+      height: 130px;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(0deg);
+    }
+
+    .line-linkedin {
+      height: 130px;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    /* Posicionamiento circular */
+    .instagram { top: -20px; left: 50%; transform: translate(-50%, -50%); }
+    .facebook { top: 50%; left: calc(100% + 20px); transform: translate(-50%, -50%); }
+    .whatsapp { bottom: -20px; left: 50%; transform: translate(-50%, 50%); }
+    .linkedin { top: 50%; left: -20px; transform: translate(-50%, -50%); }
+  </style>
+</head>
+<body>
+
+  <h1>Jorge Soto</h1>
+  <h2>Ingeniero de Software</h2>
+
+  <p class="description">
+    Soy un apasionado por la tecnología, el diseño y la innovación digital. Me especializo en crear soluciones funcionales y atractivas que conectan a las personas con ideas poderosas a través del desarrollo de software y el marketing estratégico. Además, soy un entusiasta de la impresión 3D, siempre explorando nuevas formas de combinar creatividad y tecnología para resolver problemas reales.
+  </p>
+
+  <div class="profile-container">
+    <!-- Líneas hacia cada red -->
+    <div class="line line-instagram"></div>
+    <div class="line line-facebook"></div>
+    <div class="line line-whatsapp"></div>
+    <div class="line line-linkedin"></div>
+
+    <img src="Jorge.jpg" alt="Perfil de Jorge Soto" class="profile-image">
+
+    <!-- Íconos sociales -->
+    <a href="https://www.instagram.com/jesr2104" class="social-icon instagram" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/JorgeESotoRamos/" class="social-icon facebook" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://wa.me/447596410354" class="social-icon whatsapp" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+    <a href="https://www.linkedin.com/in/jesr2104/" class="social-icon linkedin" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+    </a>
+  </div>
+
+</body>
+</html>
